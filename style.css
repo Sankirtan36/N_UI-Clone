@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:wght@400;700;800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+    font-weight: 700
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("./Assets/images/back_img.jpg");
+    height: 90vh;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center center;
+    background-size: max(1800px, 100vw);
+    object-fit: cover;
+    object-position: bottom;
+    margin-bottom: 20px;
+
+}
+
+.main .box {
+    background-color: black;
+    height: 90vh;
+    width: 100%;
+    opacity: 0.75;
+    position: absolute;
+    top: 0px;
+    margin-bottom: 30px;
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    margin: auto;
+    max-width: 77vw;
+    justify-content: space-between;
+
+}
+
+nav img {
+
+    z-index: 10;
+    position: relative;
+    top: 12px;
+
+}
+
+nav button {
+    z-index: 10;
+    position: relative;
+    top: 12px;
+
+}
+
+.text {
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    color: white;
+    z-index: 19;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 88%;
+    line-height: 1.2;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+
+.big {
+    letter-spacing: -1.9px;
+    font-size: 56px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+
+
+
+.medium {
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.small {
+    font-style: normal;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: -0.2px;
+}
+
+.email {
+    margin-top: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+}
+
+.email input {
+    width: 26em;
+    height: 4.2em;
+    border-radius: 5px;
+    padding-left: 12px;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+    font-weight: 600;
+    border: 1px solid rgb(195, 180, 180);
+    margin-right: 3px;
+    margin-bottom: 15px;
+
+
+}
+
+.email input::placeholder {
+    color: rgb(165, 165, 165);
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.get_start {
+    background-color: rgb(229, 9, 20);
+    color: white;
+    font-size: 20px;
+    height: 3em;
+    padding: 9px 28px;
+
+
+}
+
+.btn {
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.get-s {
+    margin-left: 16px;
+}
+
+.line {
+
+    height: 6px;
+    background-color: rgb(233, 9, 9);
+    box-shadow: 1px 1px radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
+    ;
+
+}
+
+.lang {
+    width: 115px;
+    height: 35px;
+    font-size: 15px;
+    text-align: center;
+    margin-right: 9px;
+    padding-left: 13px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.474);
+    border: 1px solid gray;
+}
+
+.lang img {
+    margin-right: 10px;
+    position: absolute;
+    top: 6px;
+    left: 4px;
+
+}
+
+.sign_in {
+    width: 75px;
+    height: 35px;
+    background-color: rgb(229, 9, 20);
+    color: white;
+    border: 1px solid rgb(229, 9, 20);
+}
+
+.movies {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    justify-content: center;
+}
+
+.container {
+    /* width: 90%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 16px;
+    width: 1200px;
+    /* overflow: hidden;  */
+}
+
+.banner {
+
+    height: 260px;
+    width: 190px;
+    background-color: white;
+    border: none;
+    position: relative;
+    border-radius: 8px;
+    margin: 12px;
+    flex-shrink: 0;
+
+}
+.banner:hover{
+    transform:scale(1.05);
+    transition:transform  0.3s ease-in-out;
+}
+
+#slide-banner {
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    /* gap: 29px; */
+    margin:10px;
+    width: 1000px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    gap:21px;
+
+}
+
+.slide-btn {
+    height: 125px;
+    padding: 45px 6px;
+    border-radius: 15px;
+    color: rgb(154, 151, 151);
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    font-size: 20px;
+   cursor: pointer;
+}
+.slide-btn:hover{
+background-color:rgba(28, 108, 108, 0.46);
+}
+.banner1 {
+    background-image: url('./Assets/images/Naidu.webp');
+    object-fit: cover;
+    margin-left:23px;
+}
+
+.banner2 {
+    background-image: url('./Assets/images/jaat.webp');
+    object-fit: cover;
+}
+
+.banner3 {
+    background-image: url('./Assets/images/hit.webp');
+    object-fit: cover;
+}
+
+.banner4 {
+    background-image: url('./Assets/images/chhaava.webp');
+
+    object-fit: cover;
+}
+
+.banner5 {
+    background-image: url('./Assets/images/the\ royals.webp');
+    object-fit: cover;
+}
+
+.banner6 {
+    background-image: url('./Assets/images/retro.webp');
+    object-fit: cover;
+}
+
+.banner7 {
+    background-image: url('./Assets/images/sikandar.webp');
+    object-fit: cover;
+}
+
+.banner8 {
+    background-image: url('./Assets/images/the\ diplomat.webp');
+    object-fit: cover;
+}
+
+.banner9 {
+    background-image: url('./Assets/images/good\ bad.webp');
+    object-fit: cover;
+}
+
+.banner10 {
+    background-image: url('./Assets/images/pushpa2.webp');
+    object-fit: cover;
+}
+.rank{
+    width:90%;
+    position:absolute;
+    font-size:100px;
+    font-weight:bolder;
+    bottom:0px;
+    right:39px;
+    color:black;
+  -webkit-text-stroke: 2px white;
+ font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+.trending{
+    font-size:23px;
+    margin-left:179px;
+}
